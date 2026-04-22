@@ -34,6 +34,12 @@ The codes have been attached <br><br>
 5 . main.c is the application <br>
 5 . makefile_main and makefile_lib are the makefiles with c files and makefile_lib_main and makefile_lib_tester are the ones corresponding to the mylib.a
 
+# Third Attempt :
+I changed the functions from sigmoid to Relu activation <br>
+also , I changed the inputs from -0.5 to +0.5 rather than 0-1 <br>
+by doing so , I was able to get the cost down to 0.006 which translates to an error of 0.07 nearly per example which is reasonably good <br>
+The code for this is ReluML.c
+
 
 # Third attempt:
 I tried changing the activation function from sigmoid to Relu and still coudn't find the bug
