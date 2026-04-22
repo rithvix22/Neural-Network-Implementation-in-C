@@ -1,0 +1,18 @@
+main: main.o mylib.a
+	gcc main.o -L. -lmylib -lm -o main
+	
+
+main.o: main.c ML.h matrix.h
+	gcc -c main.c
+
+mylib.a: matrix.o ML.o
+	ar rcs mylib.a matrix.o ML.o
+
+matrix.o: matrix.c matrix.h
+	gcc -c matrix.c
+
+ML.o: ML.c ML.h matrix.h
+	gcc -c ML.c
+
+clean:
+	rm -f *.o mylib.a a.out
