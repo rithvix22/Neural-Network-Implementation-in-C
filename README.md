@@ -22,6 +22,12 @@ Note : <br>
 1 . I have trained the NN on y = x<sup>2</sup> in the range x = [0,1] <br>
 2 . I have limited the number of epochs to 100 so it doesnt take much time to run and , we get results quickly <br>
 3 . Minimum error I was able to acheive was 0.0088812 after which it saturates. <br> 
-4 . tester.c shows the results of the neural network for the input values U enter<br><br>
-Here's are the codes :
+4 . tester.c shows the results of the neural network for the input values U enter<br>
+5 . unfortunately , the neural network learns a constant line which is ≈ 0.3<br><br>
+
+The codes have been attached <br><br>
+1 . ML.c is the neural network library<br>
+2 . matrix.c is the matrix library <br>
+3 . makefile_main is the makefile which gets the learnt weights and biases into network.txt<br>
+4 . makefile_tester is for testing the data.<br>
 
