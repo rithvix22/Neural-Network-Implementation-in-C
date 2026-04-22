@@ -1,0 +1,9 @@
+a.out : tester.o ML.o matrix.o
+	gcc tester.o ML.o matrix.o -lm
+
+tester.o : tester.c ML.h
+	gcc -c tester.c
+ML.o : ML.c matrix.h
+	gcc -c ML.c
+matrix.o : matrix.c
+	gcc -c matrix.c
