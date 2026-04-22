@@ -33,7 +33,6 @@ Network *create_network(int NUM_LAYERS , int *neurons){
 
 		//initialization.	
 		mat_rand(net->layers[i].W);
-		// FIXED: scale weights by sqrt(1/fan_in) for better gradient flow.
 		mat_scale(net->layers[i].W, sqrtf(1.0f / net->layers[i-1].neurons), net->layers[i].W);
 		mat_rand(net->layers[i].B);
 	}
