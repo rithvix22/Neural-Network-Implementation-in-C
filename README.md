@@ -40,6 +40,4 @@ also , I changed the inputs from -0.5 to +0.5 rather than 0-1 <br>
 by doing so , I was able to get the cost down to 0.006 which translates to an error of 0.07 nearly per example which is reasonably good <br>
 The code for this is ReluML.c
 
-
-# Third attempt:
-I tried changing the activation function from sigmoid to Relu and still coudn't find the bug
+<img width="443" height="304" alt="image" src="https://github.com/user-attachments/assets/5bb412d3-e677-4dac-adab-d17df52a57b6" />
