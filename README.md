@@ -33,3 +33,7 @@ The codes have been attached <br><br>
 4 . makefile_tester is for testing the data.<br>
 5 . main.c is the application <br>
 5 . makefile_main and makefile_lib are the makefiles with c files and makefile_lib_main and makefile_lib_tester are the ones corresponding to the mylib.a
+
+
+# Third attempt:
+I tried changing the activation function from sigmoid to Relu and still coudn't find the bug
