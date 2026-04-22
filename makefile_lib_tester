@@ -1,0 +1,17 @@
+train: tester.o mylib.a
+	gcc tester.o -L. -lmylib -lm -o train
+
+tester.o: tester.c ML.h matrix.h
+	gcc -c tester.c
+
+mylib.a: matrix.o ML.o
+	ar rcs mylib.a matrix.o ML.o
+
+matrix.o: matrix.c matrix.h
+	gcc -c matrix.c
+
+ML.o: ML.c ML.h matrix.h
+	gcc -c ML.c
+
+clean:
+	rm -f *.o mylib.a 
