@@ -12,6 +12,7 @@ what this means is that on average , the model gives an error of 0.03 error
 so <br>
 say x = 0.4 <br>
 x<sup>2</sup> will be 0.16 but , my model gives 0.46 (pretty bad).
+ML_first.c is the ML code corresponding to this.
 
 
 # Second Attempt :
