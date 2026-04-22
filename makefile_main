@@ -1,0 +1,11 @@
+a.out : main.o matrix.o ML.o
+	gcc main.o matrix.o ML.o -lm
+
+main.o : main.c matrix.h ML.h
+	gcc -c main.c
+
+matrix.o : matrix.c matrix.h
+	gcc -c matrix.c
+
+ML.o : ML.c matrix.h ML.h
+	gcc -c ML.c
