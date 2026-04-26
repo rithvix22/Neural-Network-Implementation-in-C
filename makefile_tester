@@ -1,5 +1,5 @@
-a.out : tester.o ML.o matrix.o
-	gcc tester.o ML.o matrix.o -lm
+test : tester.o ML.o matrix.o
+	gcc tester.o ML.o matrix.o -lm -o test
 
 tester.o : tester.c ML.h
 	gcc -c tester.c
