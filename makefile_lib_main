@@ -1,12 +1,12 @@
-train: main.o mylib.a
+train: main.o libmylib.a
 	gcc main.o -L. -lmylib -lm -o train
 	
 
 main.o: main.c ML.h matrix.h
 	gcc -c main.c
 
-mylib.a: matrix.o ML.o
-	ar rcs mylib.a matrix.o ML.o
+libmylib.a: matrix.o ML.o
+	ar rcs libmylib.a matrix.o ML.o
 
 matrix.o: matrix.c matrix.h
 	gcc -c matrix.c
