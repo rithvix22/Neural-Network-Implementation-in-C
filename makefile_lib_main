@@ -15,4 +15,4 @@ ML.o: ML.c ML.h matrix.h
 	gcc -c ML.c
 
 clean:
-	rm -f *.o mylib.a a.out
+	rm -f *.o mylib.a
