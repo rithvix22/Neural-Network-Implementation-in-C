@@ -9,3 +9,5 @@ ReluML.o : ML.h
 
 matrix.o : matrix.h
 	gcc -c matrix.c
+clean :
+	rm -f *.o
