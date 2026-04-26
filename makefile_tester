@@ -7,3 +7,5 @@ ML.o : ML.c matrix.h
 	gcc -c ML.c
 matrix.o : matrix.c
 	gcc -c matrix.c
+clean :
+	rm -f *.o
