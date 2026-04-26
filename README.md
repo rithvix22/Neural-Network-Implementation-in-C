@@ -45,7 +45,7 @@ The codes have been attached <br><br>
 I changed the functions from sigmoid to Relu activation <br>
 also , I changed the inputs from -0.5 to +0.5 rather than 0-1 <br>
 by doing so , I was able to get the cost down to 0.006 which translates to an error of 0.07 nearly per example which is reasonably good <br><br>
-The ML library corresponding to Relu function is ReluML.c , main is main_relu and , makefile is makefile_relu. <br>
+The ML library corresponding to Relu function is ReluML.c ,header is the same ML.h , main is main_relu and , makefile is makefile_relu. <br>
 Instructions to Run : <br>
 `make -f makefile_relu`<br>
 `./relu                 ---> training phase , stores the weights and biases into network.txt for future use`<br>
