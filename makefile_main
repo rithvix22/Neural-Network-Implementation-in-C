@@ -9,3 +9,5 @@ matrix.o : matrix.c matrix.h
 
 ML.o : ML.c matrix.h ML.h
 	gcc -c ML.c
+clean :
+	rm -f *.o
