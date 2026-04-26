@@ -4,6 +4,7 @@ Welcome to my project
 My goal was to build a neural network from scratch in C <br><br>
 All these files may look scary at the start <br>
 Read the Readme so as to get a better understanding.<br>
+Users are expected to know the math behind how a neural network works <br>
 
 # First Attempt :
 My main goal was to get a working model <br> not worrying about the time / cost 
@@ -26,10 +27,10 @@ Note : <br>
 2 . I have limited the number of epochs to 100 so it doesnt take much time to run and , we get results quickly <br>
 3 . Minimum error I was able to acheive was 0.0088812 after which it saturates. <br> <br>
 4 . Instructions to run : <br>
-  `make -f makefile_run` <br>
-  `./a.out                ---> this trains the neural network and stores the weights and biases into network.txt` <br>
+  `make -f makefile_main` <br>
+  `./train              ---> this trains the neural network and stores the weights and biases into network.txt` <br>
   `make -f makefile_tester` <br>
-  `./a.out                ---> to give the prediction using the learnt weights and biases` <br><br>
+  `./test               ---> to give the prediction using the learnt weights and biases` <br><br>
 5 . unfortunately , the neural network learns a constant line which is ≈ 0.3 . The issue I suspect is vanishing gradient<br><br>
 
 The codes have been attached <br><br>
@@ -47,9 +48,9 @@ by doing so , I was able to get the cost down to 0.006 which translates to an er
 The ML library corresponding to Relu function is ReluML.c , main is main_relu and , makefile is makefile_relu. <br>
 Instructions to Run : <br>
 `make -f makefile_relu`<br>
-`./a.out                ---> training phase , stores the weights and biases into network.txt for future use`<br>
+`./relu                 ---> training phase , stores the weights and biases into network.txt for future use`<br>
 `make -f makefile_tester ` <br>
-`./a.out                ---> tests the neural network` 
+`./test                 ---> tests the neural network` <br><br>
 
-<br><br>
+below is the mininum cost I was able to achieve using the Relu network
 <img width="443" height="304" alt="image" src="https://github.com/user-attachments/assets/5bb412d3-e677-4dac-adab-d17df52a57b6" />
