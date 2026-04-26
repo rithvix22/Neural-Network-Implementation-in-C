@@ -2,6 +2,8 @@
 
 Welcome to my project
 My goal was to build a neural network from scratch in C <br><br>
+All these files may look scary at the start <br>
+Read the Readme so as to get a better understanding.<br>
 
 # First Attempt :
 My main goal was to get a working model <br> not worrying about the time / cost 
