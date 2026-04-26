@@ -1,5 +1,5 @@
-main: main.o mylib.a
-	gcc main.o -L. -lmylib -lm -o main
+train: main.o mylib.a
+	gcc main.o -L. -lmylib -lm -o train
 	
 
 main.o: main.c ML.h matrix.h
