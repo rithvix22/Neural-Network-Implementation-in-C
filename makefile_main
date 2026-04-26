@@ -1,5 +1,5 @@
-a.out : main.o matrix.o ML.o
-	gcc main.o matrix.o ML.o -lm
+train: main.o matrix.o ML.o
+	gcc main.o matrix.o ML.o -lm -o train
 
 main.o : main.c matrix.h ML.h
 	gcc -c main.c
