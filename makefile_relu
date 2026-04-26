@@ -1,0 +1,11 @@
+a.out : main_relu.o matrix.o ReluML.o
+	gcc matrix.o ReluML.o main_relu.o -lm
+
+main_relu.o : ML.h main_relu.c
+	gcc -c main_relu.c 
+
+ReluML.o : ML.h 
+	gcc -c ReluML.c
+
+matrix.o : matrix.h
+	gcc -c matrix.c
