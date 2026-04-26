@@ -1,5 +1,5 @@
-a.out : main_relu.o matrix.o ReluML.o
-	gcc matrix.o ReluML.o main_relu.o -lm
+relu : main_relu.o matrix.o ReluML.o
+	gcc matrix.o ReluML.o main_relu.o -lm -o relu
 
 main_relu.o : ML.h main_relu.c
 	gcc -c main_relu.c 
