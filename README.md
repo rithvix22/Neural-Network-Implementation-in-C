@@ -23,6 +23,7 @@ I implemented the Back prop Algorithm. for the function y = x<sup>2</sup> <br>
 I was able to generate a minimum cost = 0.088812 ≈ 0.09 <br>
 this means that for a given input of x between 0-1 , there is an error of &radic;0.09 = 0.3 (which is quite bad) <br> <br>
 Note : <br>
+<b>`Main Feature : Users can change the layers array in main.c to get whatever architechture they want for the NN.`</b><br>
 1 . I have trained the NN on y = x<sup>2</sup> in the range x = [0,1] <br>
 2 . I have limited the number of epochs to 100 so it doesnt take much time to run and , we get results quickly <br>
 3 . Minimum error I was able to acheive was 0.0088812 after which it saturates. <br> <br>
